@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Apostles Spotlights</title>
+    <style>
+        /* Insert styles here */
+        body {
+            display: grid;
+            
+        }
+
+        main{
+            background-image: url("images/cristus.webp");
+            height: 1000px;
+            width: 1000px;
+            place-items: center;
+            font-family: Arial, sans-serif;
+        }
+
+        .spotlight {
+            width: 200px;
+            height: 200px;
+            border: 10px solid white;
+            border-radius: 50%;
+            overflow: hidden;
+        }
+
+        .spotlight img {
+            width: 200px;
+        }
+
+        h1 {
+            display: grid;
+            
+        }
+
+        .pres {
+            grid-column: 2/5;
+        }
+
+        h2 {
+            display: grid;
+            
+        }   
+
+        .twelve {
+            grid-column: 2/3;
+            grid-row: 1/2;
+            margin-top: 100px;
+        }
+
+
+        #wrapper {
+            display: grid;
+            grid-template-columns: repeat(6, 1fr);
+            gap: 20px;
+            padding: 20px;
+            max-width: 1200px;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <!-- Insert HTML elements here -->
+     <main>
+     <div id="wrapper">
+        
+        
+        
+        <h1>First Presidency</h1>
+        <div id="pres">
+            <div class="spotlight">
+                <img src="images/nelson.webp" alt="President Nelson">
+                <img src="images/monson.webp" alt="President Monson">
+                <img src="images/eyring.webp" alt="President Eyring">
+            </div>
+        </div>
+        <h2>
+            Quorum of the Twelve Apostles
+        </h2>
+        <div id="twelve">
+            <div class="spotlight">
+                <img src="images/gong.webp" alt="Elder Gong">
+                <img src="images_andersen.webp" alt="Elder Andersen">
+                <img src="images/stevenson.webp" alt="Elder Stevenson">
+                <img src="images/renlund.webp" alt="Elder Renlund">
+                <img src="images/oaks.webp" alt="Elder Oaks">
+                <img src="images/rasband.webp" alt="Elder Rasband">
+                <img src="images/kearon.webp" alt="Elder Kearon">
+                <img src="images/cook.webp" alt="Elder Cook">
+                <img src="images/soares.webp" alt="Elder Soares">
+                <img src="images/holland.webp" alt="Elder Holland">
+                <img src="images/bednar.webp" alt="Elder Bednar">
+                <img src="images/uchtdorf.webp" alt="Elder Uchtdorf">
+            </div>
+        </div>
+     </div>
+     </main>
+</body>
+</html>

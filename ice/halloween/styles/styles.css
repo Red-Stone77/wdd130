@@ -1,0 +1,140 @@
+/* 🎃 General Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Creepster', cursive, sans-serif;
+  
+}
+
+/* 👻 Body and Wrapper */
+body {
+  background: radial-gradient(circle at top, #1a0000 0%, #000000 100%);
+  color: #f8f1e4;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+
+}
+
+#wrapper {
+  width: 90%;
+  max-width: 900px;
+  background: rgba(20, 0, 0, 0.7);
+  border: 2px solid #ff6600;
+  border-radius: 15px;
+  box-shadow: 0 0 30px #ff6600aa;
+  overflow: hidden;
+  animation: flicker 2s infinite alternate;
+}
+
+/* 🕸️ Header + Navigation */
+header {
+  background-color: #330000;
+  border-bottom: 2px solid #ff6600;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: space-around;
+  padding: 15px 0;
+}
+
+nav li {
+  color: #ff9933;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  text-shadow: 0 0 10px #ff6600;
+}
+
+nav li:hover {
+  color: #fff;
+  text-shadow: 0 0 20px #ffa500, 0 0 40px #ff6600;
+  transform: scale(1.2);
+}
+
+/* 🧡 Main Content */
+main {
+  text-align: center;
+  padding: 30px;
+}
+
+main h1 {
+  font-size: 3em;
+  color: #ff6600;
+  text-shadow: 0 0 25px #ff3300, 0 0 50px #ff6600;
+  animation: pulse 2s infinite;
+}
+
+main img {
+  width: 200px;
+  margin: 20px 0;
+  animation: float 3s ease-in-out infinite;
+}
+
+/* 💀 Sections */
+section {
+  margin-top: 30px;
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid #ff6600;
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0 0 20px #ff660055;
+  transition: transform 0.3s ease;
+}
+
+section:hover {
+  transform: scale(1.03);
+  box-shadow: 0 0 30px #ff6600aa;
+}
+
+h2 {
+  color: #ffa500;
+  margin-bottom: 10px;
+  text-shadow: 0 0 10px #ff6600;
+}
+
+/* 🕯️ Paragraphs */
+p {
+  line-height: 1.6;
+  color: #f5e2c8;
+}
+
+/* 🦇 Footer */
+footer {
+  text-align: center;
+  padding: 15px;
+  background-color: #330000;
+  color: #ff9933;
+  font-weight: bold;
+  border-top: 2px solid #ff6600;
+  text-shadow: 0 0 10px #ff6600;
+}
+
+/* ✨ Animations */
+@keyframes float {
+  0%, 100% { transform: translateY(0px); }
+  50% { transform: translateY(-10px); }
+}
+
+@keyframes pulse {
+  0%, 100% { text-shadow: 0 0 20px #ff6600, 0 0 40px #ff3300; }
+  50% { text-shadow: 0 0 40px #ffa500, 0 0 80px #ff6600; }
+}
+
+@keyframes flicker {
+  0%, 19%, 21%, 23%, 25%, 54%, 56%, 100% {
+    box-shadow: 0 0 30px #ff6600aa;
+  }
+  20%, 24%, 55% {
+    box-shadow: 0 0 5px #ff660044;
+  }
+}
+
+/* 🕷️ Optional spooky font (Google Fonts import if allowed)
+   Add this to your <head> if permitted:
+   <link href="https://fonts.googleapis.com/css2?family=Creepster&display=swap" rel="stylesheet">
+*/
